@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'helloworld',
     'to_do',
     'graph',
+    'bargraph',
 ]
 
 MIDDLEWARE = [
