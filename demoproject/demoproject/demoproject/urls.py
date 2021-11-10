@@ -25,6 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url('to_do/', to_do_view.to_do, name='to_do_list'),
     url('graph/', graph_view.graph, name='my graph'),
-    url('bargraph/', bargraph_view.graph, name='my bargraph'),
+    url('bargraph/', bargraph_view.bargraph, name='my bargraph'),
     url(r'^$', hello_view.home, name='home')
 ]

@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bargraph recommended sleep vs awake</title>
+    <link href=”http://cdn.pydata.org/bokeh/release/bokeh-2.4.1.min.css" rel=”stylesheet” type=”text/css”>
+    <link href=”http://cdn.pydata.org/bokeh/release/bokeh-widgets-2.4.1.min.css" rel=”stylesheet” type=”text/css”>
+
+    <script src=”http://cdn.pydata.org/bokeh/release/bokeh-2.4.1.min.js"></script>
+    <script src=”http://cdn.pydata.org/bokeh/release/bokeh-widgets-2.4.1.min.js"></script>
+    {{ script | safe }}
     <script src="http://cdn.bokeh.org/bokeh/release/bokeh-2.4.1.min.js"></script>
     <link rel="stylesheet" href="http://cdn.bokeh.org/bokeh/release/bokeh-2.4.1.min.css">
+    <title>bargraph pet numbers</title>
 </head>
 <body>
-    {{ the_div|safe }}
-    {{ the_script|safe }}
+    {{ div|safe }}
 </body>
 </html>
