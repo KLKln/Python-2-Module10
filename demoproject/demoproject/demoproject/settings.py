@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'to_do',
     'graph',
     'bargraph',
+    'piechart',
 ]
 
 MIDDLEWARE = [

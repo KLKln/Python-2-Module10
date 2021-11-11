@@ -14,17 +14,4 @@ def graph(request):
 
     script, div = components(plot, CDN)
 
-    return render(request, "index_graph.html", {"the_script": script, "the_div": div})
-
-"""from django.shortcuts import render
-from bokeh.plotting import figure
-from bokeh.resources import CDN
-from bokeh.embed import components
-
-def graph(request):
-    plot = figure()
-    plot.circle([1,2], [3,4])
-
-    script, div = components(plot, CDN)
-
-    return render(request, "index_graph.html", {"the_script": script, "the_div": div})"""
+    return render(request, "graph_index.html", {"the_script": script, "the_div": div})

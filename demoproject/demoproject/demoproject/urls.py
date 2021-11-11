@@ -20,11 +20,13 @@ from helloworld import views as hello_view
 from to_do import views as to_do_view
 from graph import views as graph_view
 from bargraph import views as bargraph_view
+from piechart import views as piechart_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('to_do/', to_do_view.to_do, name='to_do_list'),
     url('graph/', graph_view.graph, name='my graph'),
     url('bargraph/', bargraph_view.bargraph, name='my bargraph'),
-    url(r'^$', hello_view.home, name='home')
+    url('piechart/', piechart_view.piechart, name='my piechart'),
+    url(r'^$', hello_view.home, name='home'),
 ]
